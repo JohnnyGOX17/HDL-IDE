@@ -8,6 +8,11 @@ Heavily reliant on [GHDL](https://ghdl.readthedocs.io/en/latest/index.html)
 - Create interface to GHDL that can do C cosimulation to provide stdin/stdout access to TBs or design -> go even farther for Ethernet based designs to be able to wrap design into C kernel module that can be accessed via Linux networking subsystem and other local or remote devices (soft-Eth devices)
 - Create seperate Vim plugins for:
   + Waveform viewing for TBs (post-mortem like GTKWave or dynamic using signal output during run?) and type support for enumerated types (see `--wave=<out>` in GHDL docs) that can run in CLI (like UTF-8 output) unlike GTKWave and run in Vi split?
+    * Look at:
+      - https://github.com/yne/vcd
+      - https://pypi.org/project/pyvcd/
+      - https://pypi.org/project/vcdvcd/
+      - https://pypi.org/project/pyDigitalWaveTools/
   + Full Design Heirarchy Viewer/Browser (see GHDL output of `--disp-tree`), maybe ctag integration?
   + RegMap auto creation/update?
     - Look into integrating with [Kactus2](http://funbase.cs.tut.fi/) and https://github.com/olofk/ipyxact for general IP-XACT interoperability
