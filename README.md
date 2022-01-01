@@ -2,7 +2,7 @@
 
 Accumulation of tools, plugins and configs to turn Vim into a IDE for HDL development and in general, make HDL development that much quicker and easier.
 
-Heavily reliant on [GHDL](https://ghdl.readthedocs.io/en/latest/index.html)
+Heavily reliant on [GHDL](https://ghdl.readthedocs.io/en/latest/index.html) and [pyVHDL](https://github.com/vhdl/pyVHDLModel)
 
 ## TODO:
 - Overall design like https://github.com/TerosTechnology/vscode-terosHDL
