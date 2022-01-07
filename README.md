@@ -5,6 +5,9 @@ Accumulation of tools, plugins and configs to turn Vim into a IDE for HDL develo
 Heavily reliant on [GHDL](https://ghdl.readthedocs.io/en/latest/index.html) and [pyVHDL](https://github.com/vhdl/pyVHDLModel)
 
 ## TODO:
+- Pre-processing layer to convert VHDL 2019 (or maybe even VHDL 2008) files to VHDL 2008/93 output files, so they can be used by essentially any synthesis or simulation tool
+  + For instance, [allowing VHDL-2019 style interfaces to be used in synthesizeable code](https://www.reddit.com/r/FPGA/comments/ry69ak/vhdl_2019_supply_and_demand/hrnjywf/?utm_source=share&utm_medium=web2x&context=3)
+  + Parse and replace file contents like https://github.com/nobodywasishere/VHDLproc
 - Overall design like https://github.com/TerosTechnology/vscode-terosHDL
 - Create interface to GHDL that can do C cosimulation to provide stdin/stdout access to TBs or design -> go even farther for Ethernet based designs to be able to wrap design into C kernel module that can be accessed via Linux networking subsystem and other local or remote devices (soft-Eth devices)
 - Create seperate Vim plugins for:
