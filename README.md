@@ -6,6 +6,8 @@ Heavily reliant on [GHDL](https://ghdl.readthedocs.io/en/latest/index.html) and 
 
 ## TODO:
 - Pre-processing layer to convert VHDL 2019 (or maybe even VHDL 2008) files to VHDL 2008/93 output files, so they can be used by essentially any synthesis or simulation tool
+  + [ ] this actually might be best suited as a VHDL-2019 addition to GHDL (not only for simulation) b/c it has a [synthesis feature which can create VHDL-93 netlists that every vendor tool should understand](https://ghdl.github.io/ghdl/using/Synthesis.html)
+    - And, the [Yosys plugin allows conversion to Verilog which can actually mean mixed signal simulation/synthesis](https://ghdl.github.io/ghdl/using/Synthesis.html#convert-v-hdl-to-other-formats)
   + For instance, [allowing VHDL-2019 style interfaces to be used in synthesizeable code](https://www.reddit.com/r/FPGA/comments/ry69ak/vhdl_2019_supply_and_demand/hrnjywf/?utm_source=share&utm_medium=web2x&context=3)
   + Parse and replace file contents like https://github.com/nobodywasishere/VHDLproc
   + Use CSV top-level file to not only give what files to compile, but compile order, VHDL/Verilog version, etc. metadata
