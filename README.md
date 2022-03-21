@@ -21,6 +21,7 @@ Heavily reliant on [GHDL](https://ghdl.readthedocs.io/en/latest/index.html) and 
       - https://pypi.org/project/vcdvcd/
       - https://pypi.org/project/pyDigitalWaveTools/
   + Full Design Heirarchy Viewer/Browser (see GHDL output of `--disp-tree`), maybe ctag integration?
+  + Use [OpenTimer](https://github.com/OpenTimer/OpenTimer) w/base timing models to give a SWAG on timing estimates/F_max?
   + RegMap auto creation/update?
     - Look into integrating with [Kactus2](http://funbase.cs.tut.fi/) and https://github.com/olofk/ipyxact for general IP-XACT interoperability
   + Completion/reference checking plugin for YCM & snippets (like how C/C++ operates) to much more easily integrate changes in interfaces
